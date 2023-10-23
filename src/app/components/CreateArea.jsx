@@ -44,7 +44,7 @@ function CreateArea(props) {
             });
           }}
         >
-          Add
+          ADD
         </button>
       </form>
     </div>

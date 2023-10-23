@@ -1,8 +1,21 @@
+header {
+  text-align: center;
+  color: #497174;
+}
+
+footer {
+  color: #d6e4e5;
+  width: 100%;
+  text-align: center;
+}
+
+/* notes-component styling */
 .notes-container {
   display: flex;
   justify-content: center;
   width: auto;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .note {
@@ -25,20 +38,22 @@
   word-wrap: break-word;
 }
 
-.note button {
+.note-button {
   position: relative;
   float: right;
-  margin-right: 10px;
-  color: #497174;
+  bottom: 0;
+  right: 10px;
+
+  color: #d6e4e5;
   border: none;
-  width: 36px;
+  width: 65px;
   height: 36px;
   cursor: pointer;
   outline: none;
+  background-color: white;
 }
 
 /* createarea styling */
-
 .form-container {
   display: flex;
 }
@@ -75,17 +90,18 @@ form textarea {
 
 form button {
   position: absolute;
-  right: 18px;
-  bottom: -18px;
+  right: 25px;
+  bottom: -20px;
   background: #497174;
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+  padding-left: 5px;
 }
 
 form button:hover {
