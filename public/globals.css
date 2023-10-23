@@ -1,40 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Montserrat", sans-serif;
-}
-body {
-  background: #eee;
-  padding: 0 16px;
+.notes-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  flex-wrap: wrap;
 }
 
-header {
-  background-color: #f5ba13;
-  margin: auto -16px;
-  padding: 16px 32px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-  color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
-}
-
-footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-
-footer p {
-  color: #ccc;
-}
 .note {
   background: #fff;
   border-radius: 7px;
@@ -59,7 +29,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #f5ba13;
+  color: #497174;
   border: none;
   width: 36px;
   height: 36px;
@@ -67,17 +37,22 @@ footer p {
   outline: none;
 }
 
+/* createarea styling */
+
+.form-container {
+  display: flex;
+}
+
 form {
   position: relative;
   width: 480px;
-  margin: 30px auto 20px auto;
+  margin: 0px auto 20px auto;
   background: #fff;
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+form input {
   width: 100%;
   border: none;
   padding: 4px;
@@ -86,11 +61,23 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
+
+form textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
 form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f5ba13;
+  background: #497174;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -99,4 +86,31 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+form button:hover {
+  background: #eb6440;
+}
+
+/* scroll-bar styling */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

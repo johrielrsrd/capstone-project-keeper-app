@@ -19,7 +19,7 @@ function CreateArea(props) {
   }
 
   return (
-    <div>
+    <div className="form-container">
       <form>
         <input
           onChange={handleChange}
