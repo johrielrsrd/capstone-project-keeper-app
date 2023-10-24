@@ -35,7 +35,6 @@ function CreateArea(props) {
           name="title"
           placeholder="Title"
           value={inputNote.title}
-          required
         />
         <textarea
           onChange={handleChange}

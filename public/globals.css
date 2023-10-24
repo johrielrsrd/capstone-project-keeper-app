@@ -10,10 +10,15 @@ footer {
 }
 
 /* notes-component styling */
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
 .notes-container {
   display: flex;
   justify-content: center;
-  width: auto;
+  max-width: 1000px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -41,16 +46,12 @@ footer {
 .note-button {
   position: relative;
   float: right;
-  bottom: 0;
-  right: 10px;
-
   color: #d6e4e5;
   border: none;
-  width: 65px;
-  height: 36px;
   cursor: pointer;
   outline: none;
   background-color: white;
+  padding: 0;
 }
 
 /* createarea styling */
@@ -90,7 +91,7 @@ form textarea {
 
 form button {
   position: absolute;
-  right: 25px;
+  right: 15px;
   bottom: -20px;
   background: #497174;
   color: #fff;
